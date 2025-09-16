@@ -448,6 +448,14 @@ section .container {
   font-size: 20px;
 }
 
+@media (max-width: 768px) {
+  .why h1 {
+  font-size: 40px;
+}
+.why h6 {
+  font-size: 15px;
+}
+}
 
 footer {
   background-color: #111827;

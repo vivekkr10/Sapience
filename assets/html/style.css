@@ -285,6 +285,11 @@ body {
   /* font-size: 70px; */
   color: #ffffff;
 }
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 40px;
+  }
+}
 
 /* ------------------------------------- experiance ----------------------------------- */
 /* Fonts */
@@ -1292,6 +1297,9 @@ body {
 
   #contact textarea {
     grid-column: span 1;
+  }
+  #contact h1.font-serif {
+    font-size: 2rem;
   }
 }
 
