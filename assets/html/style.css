@@ -3,13 +3,22 @@
   --soft-gold: #f5e6a3;
   --dark-charcoal: #1a1a1a;
   --pure-white: #ffffff;
+  --primary-500: #13a4ec;
+  --primary-100: #e8f6fd;
+  --secondary-700: #0d171b;
+  --secondary-500: #4c809a;
+  --secondary-200: #cfdfe7;
+  --secondary-100: #f8fafc;
 }
+
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: var(--dark-charcoal);
-  color: var(--pure-white);
   overflow-x: hidden;
+  margin: 0;
+  background: #fff;
+  color: #181611;
+  color: var(--secondary-700);
 }
 
 .font-serif-premium {
@@ -38,7 +47,7 @@ body {
   font-weight: 700;
   letter-spacing: 1px;
   padding: 14px 36px;
-  border-radius: 50px; /* pill shape */
+  border-radius: 50px;
   font-size: 1rem;
   text-transform: uppercase;
   transition: all 0.3s ease;
@@ -134,7 +143,6 @@ body {
   border-radius: 2px;
 }
 
-/* Dropdown Menu */
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -169,7 +177,6 @@ body {
   transform: translateY(0);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .nav-links {
     flex-direction: column;
@@ -200,9 +207,8 @@ body {
     width: 100%;
   }
 
-  /* Mobile dropdown */
   .dropdown-menu {
-    position: static; /* stack inside nav */
+    position: static;
     background: #444;
     box-shadow: none;
     border-radius: 0;
@@ -211,7 +217,7 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: all 0.4s ease;
-    padding-left: 25px; /* indent for bullets */
+    padding-left: 25px;
   }
 
   .dropdown.active .dropdown-menu {
@@ -220,7 +226,6 @@ body {
     visibility: visible;
   }
 
-  /* ✅ Enable bullets only on mobile */
   .dropdown-menu li {
     list-style: disc;
     color: #fff;
@@ -241,12 +246,13 @@ body {
     display: flex;
   }
 }
-
-/* --------------------------------------------------------------------------------------------------- */
+/* ==============================
+   Hero section
+   ============================== */
 .hero {
   position: relative;
   width: 100%;
-  height: 100vh; /* Full screen hero */
+  height: 100vh;
   background-color: white;
   overflow: hidden;
   display: flex;
@@ -273,7 +279,7 @@ body {
   position: relative;
   z-index: 2;
   max-width: 800px;
-  padding: 100px 20px 20px; /* pushes text down to avoid navbar */
+  padding: 100px 20px 20px;
   color: black;
 }
 
@@ -291,15 +297,9 @@ body {
   }
 }
 
-/* ------------------------------------- experiance ----------------------------------- */
-/* Fonts */
-body {
-  margin: 0;
-  font-family: "Noto Sans", sans-serif;
-  background: #fff;
-  color: #181611;
-}
-
+/* ==============================
+   Experience section
+   ============================== */
 h2.headline {
   font-family: "Newsreader", serif;
   font-size: 2.5rem;
@@ -315,8 +315,7 @@ p.text {
   margin-bottom: 30px;
 }
 
-/* Layout */
-.container {
+.experience .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -329,7 +328,6 @@ p.text {
   align-items: center;
 }
 
-/* Experience Section */
 .experience {
   padding: 80px 0;
   background: #fff;
@@ -363,7 +361,6 @@ p.text {
   font-size: 22px;
 }
 
-/* Progress Bar */
 .progress {
   margin-bottom: 30px;
 }
@@ -403,23 +400,6 @@ p.text {
 button {
   border: none;
   cursor: pointer;
-}
-
-.btn-dark {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: #181611;
-  color: #fff;
-  font-weight: bold;
-  padding: 14px 28px;
-  border-radius: 50px;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-}
-
-.btn-dark:hover {
-  background: #000;
 }
 
 .btn-gold {
@@ -541,7 +521,9 @@ button {
   }
 }
 
-/* CTA Section */
+/* ==============================
+   CTA section
+   ============================== */
 .cta {
   padding: 80px 20px;
   background: linear-gradient(135deg, #1a1a1a, #000);
@@ -560,7 +542,9 @@ button {
   margin: 0 auto 30px;
 }
 
-/* === Services Section === */
+/* ==============================
+   Services section
+   ============================== */
 .services {
   padding: 4rem 1rem;
   max-width: 1200px;
@@ -629,7 +613,9 @@ button {
   color: #666;
 }
 
-/* ---------- COMMITMENT SECTION ---------- */
+/* ==============================
+   Commitment section
+   ============================== */
 .commitment {
   position: relative;
   background: #000;
@@ -679,7 +665,6 @@ button {
   color: #ccc;
 }
 
-/* Grid layout */
 .commitment-grid {
   display: flex;
   justify-content: center;
@@ -690,7 +675,6 @@ button {
   /* padding-bottom: 10px; */
 }
 
-/* Cards */
 .commitment-card {
   /* flex: 0 0 280px; */
   background: rgba(255, 255, 255, 0.02);
@@ -726,11 +710,12 @@ button {
   color: #bbb;
   line-height: 1.5;
 }
+
 /* Responsive Commitment Section */
 @media (min-width: 769px) {
   .commitment-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
   }
 }
@@ -738,7 +723,7 @@ button {
 @media (max-width: 768px) {
   .commitment-grid {
     display: grid;
-    grid-template-columns: 1fr; /* stack cards vertically */
+    grid-template-columns: 1fr;
     gap: 20px;
   }
 
@@ -752,29 +737,10 @@ button {
   }
 }
 
-:root {
-  --primary-500: #13a4ec;
-  --primary-100: #e8f6fd;
-  --secondary-700: #0d171b;
-  --secondary-500: #4c809a;
-  --secondary-200: #cfdfe7;
-  --secondary-100: #f8fafc;
-}
-
-body {
-  margin: 0;
-  font-family: "Work Sans", "Noto Sans", sans-serif;
-  background: #fff;
-  color: var(--secondary-700);
-}
-
-.section-why {
-  display: flex;
-  justify-content: center;
-  padding: 5rem 1rem;
-}
-
-.section-container {
+/* ==============================
+   Get to know us section
+   ============================== */
+.choose-container {
   max-width: 1200px;
   width: 100%;
   display: flex;
@@ -968,8 +934,8 @@ body {
 /* Individual Stat Card */
 .stat-card {
   background-color: #fff;
-  border: 1px solid #e5e7eb; /* light gray border */
-  border-radius: 0.75rem; /* rounded corners */
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
   padding: 1.5rem;
   text-align: center;
   transition: all 0.3s ease;
@@ -979,32 +945,29 @@ body {
   justify-content: center;
 }
 
-/* Hover Effect */
 .stat-card:hover {
-  border-color: #ecb613; /* primary color */
+  border-color: #ecb613;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
-/* Icon */
 .stat-card span.material-symbols-outlined {
-  font-size: 2.25rem; /* 36px */
+  font-size: 2.25rem;
   color: #ecb613;
   margin-bottom: 1rem;
 }
 
-/* Number */
 .number {
-  font-size: 3rem; /* 48px */
+  font-size: 3rem;
   font-weight: 700;
-  color: #181611; /* dark text */
+  color: #181611;
   margin: 0;
 }
 
 /* Label */
 .label {
-  font-size: 1.125rem; /* 18px */
+  font-size: 1.125rem;
   font-weight: 500;
-  color: #4b5563; /* gray-600 */
+  color: #4b5563;
   margin-top: 0.5rem;
 }
 
@@ -1195,7 +1158,7 @@ body {
 #contact .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6); /* semi-transparent dark overlay */
+  background: rgba(0, 0, 0, 0.6);
   z-index: 0;
 }
 
@@ -1232,8 +1195,7 @@ body {
 
 #contact .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 columns on desktop */
-  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
 }
 
 #contact .grid input,
@@ -1247,7 +1209,7 @@ body {
   color: #fff;
   outline: none;
   transition: all 0.3s ease;
-  box-sizing: border-box; /* important */
+  box-sizing: border-box;
 }
 
 #contact .grid input::placeholder,
@@ -1262,7 +1224,7 @@ body {
 }
 
 #contact textarea {
-  grid-column: span 2; /* span full width on desktop */
+  grid-column: span 2;
   resize: none;
 }
 
@@ -1292,7 +1254,7 @@ body {
 /* Responsive */
 @media (max-width: 768px) {
   #contact .grid {
-    grid-template-columns: 1fr; /* stack inputs on mobile */
+    grid-template-columns: 1fr;
   }
 
   #contact textarea {
