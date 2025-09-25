@@ -2,694 +2,883 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sapience Info Train - Luxury Digital Agency</title>
+    <title>Hero Section 1 – Vanilla</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      rel="stylesheet"
-    />
-    <!-- Tailwind only for fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <!-- <link rel="stylesheet" href="light.css"> -->
   </head>
   <body>
-    <!-- Navbar -->
-    <header>
-      <nav class="navbar">
-        <img src="logo.png" alt="logo" />
+    <header class="site-header">
+      <div class="nav-wrap container">
+        <nav class="nav-inner">
+          <a class="brand" href="/" aria-label="home">
+            <svg viewBox="0 0 78 18" width="90" height="22" aria-hidden="true">
+              <defs>
+                <linearGradient
+                  id="g"
+                  x1="10"
+                  y1="0"
+                  x2="10"
+                  y2="20"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#9B99FE" />
+                  <stop offset="1" stop-color="#2BC8B7" />
+                </linearGradient>
+              </defs>
+              <img style="margin-left:-100px;" src="logo.png" alt="">
+              <!-- trimmed for brevity -->
+            </svg>
+          </a>
+          <button class="menu-toggle" aria-label="Toggle menu" id="menuBtn">
+            ☰
+          </button>
+          <div class="links" aria-hidden="false">
+            <a href="#home">Home</a>
+            <div class="has-submenu">
+              <a
+                href="#pricing"
+                class="toplink"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Pricing</a
+              >
+              <ul class="submenu pricingHover" role="menu" aria-label="Pricing">
+                <li>
+                  <a role="menuitem" href="#quickbooks">QuickBooks Hosting</a>
+                </li>
+                <li>
+                  <a role="menuitem" href="#peachtree">Peachtree Hosting</a>
+                </li>
+                <li><a role="menuitem" href="#sage50">Sage50 Hosting</a></li>
+                <li><a role="menuitem" href="#drake">Drake Hosting</a></li>
+                <li><a role="menuitem" href="#lacerte">Lacerte Hosting</a></li>
+                <li>
+                  <a role="menuitem" href="#proseries">Proseries Hosting</a>
+                </li>
+                <li>
+                  <a role="menuitem" href="#act-pricing">ACT Hosting Pricing</a>
+                </li>
+                <li>
+                  <a role="menuitem" href="#atx-pricing">ATX Hosting Pricing</a>
+                </li>
+              </ul>
+            </div>
+            <div class="has-submenu">
+              <a
+                href="hosting"
+                class="toplink"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Hosting</a
+              >
+              <ul class="submenu hostingHover" role="menu" aria-label="Hosting">
+                <!-- Application Hosting -->
+                <li class="has-submenu">
+                  <a
+                    href="#applicationHosting"
+                    role="menuitem"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Application Hosting
+                  </a>
+                  <ul
+                    class="submenu appHostingHover"
+                    role="menu"
+                    aria-label="Application Hosting"
+                  >
+                    <li><a href="#quickbooks">QuickBooks Hosting</a></li>
+                    <li><a href="#peachtree">Peachtree Hosting</a></li>
+                    <li><a href="#quicken">Quicken Hosting</a></li>
+                    <li><a href="#myob">MYOB Hosting</a></li>
+                    <li><a href="#qb-cloud">QuickBooks Cloud Hosting</a></li>
+                    <li>
+                      <a href="#qb-enterprise">QuickBooks Enterprise Hosting</a>
+                    </li>
+                  </ul>
+                </li>
 
-        <ul class="nav-links" id="navLinks">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li class="dropdown">
-            <a class="service-btn" href="#">
-              Services
-              <span class="material-symbols-outlined">keyboard_arrow_down</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a href="seo.html">SEO</a></li>
-              <li><a href="smo.html">SMO</a></li>
-              <li><a href="smm.html">SMM</a></li>
-              <li><a href="website.html">Website Design & Development</a></li>
-              <li><a href="ppc.html">PPC</a></li>
-              <li><a href="content.html">Content Writing</a></li>
-              <li><a href="video.html">Video Advertising</a></li>
-              <li><a href="graphic.html">Graphic Design</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Testimonials</a></li>
-          <li>
-            <a href="tel:+919311311520" class="call-btn">+91 93113-11520</a>
-          </li>
+                <!-- Tax Software Hosting -->
+                <li class="has-submenu">
+                  <a
+                    href="#taxSoftwareHosting"
+                    role="menuitem"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Tax Software Hosting
+                  </a>
+                  <ul
+                    class="submenu taxHostingHover"
+                    role="menu"
+                    aria-label="Tax Software Hosting"
+                  >
+                    <li><a href="#ats">ATS Hosting</a></li>
+                    <li><a href="#drake">Drake Hosting</a></li>
+                    <li><a href="#lacerte">Lacerte Hosting</a></li>
+                    <li><a href="#taxwise">TaxWise Hosting</a></li>
+                    <li><a href="#proseries">ProSeries Hosting</a></li>
+                    <li><a href="#ultracs">Ultra Tax CS Hosting</a></li>
+                    <li><a href="#workgroup">Work Group Server Hosting</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="has-submenu">
+              <a
+                href="#support"
+                class="toplink"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Support</a
+              >
+              <ul class="submenu supportHover" role="menu" aria-label="Support">
+                <li><a role="menuitem" href="#about">About Us</a></li>
+                <li><a role="menuitem" href="#contact">Contact Us</a></li>
+                <li><a role="menuitem" href="#privacy">Privacy Policy</a></li>
+                <li>
+                  <a role="menuitem" href="#user-acceptance">User Acceptance</a>
+                </li>
+                <li>
+                  <a role="menuitem" href="#sla">Service Level Agreement</a>
+                </li>
+                <li>
+                  <a role="menuitem" href="#client-registration"
+                    >Client Registration Form</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="has-submenu">
+              <a
+                href="#resource"
+                class="toplink"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Resource</a
+              >
+              <ul
+                class="submenu resourceHover"
+                role="menu"
+                aria-label="Resource"
+              >
+                <li>
+                  <a role="menuitem" href="#qb-benefits">QuickBooks Benefits</a>
+                </li>
+                <li>
+                  <a role="menuitem" href="#lacerte">Lacerte Tax Software</a>
+                </li>
+                <li>
+                  <a role="menuitem" href="#peachtree-sw">Peachtree by S / W</a>
+                </li>
+                <li>
+                  <a role="menuitem" href="#qb-addons">QuickBooks Add-on</a>
+                </li>
+                <li>
+                  <a role="menuitem" href="#act-sage">ACT! By Sage Hosting</a>
+                </li>
+              </ul>
+            </div>
+            <a href="#blog">Blog</a>
+          </div>
+          <div class="cta">
+            <button class="btn btn-outline">Login</button>
+            <button class="btn"><strong>Get Started</strong></button>
+          </div>
+        </nav>
+      </div>
+      <div
+        class="mobile-panel"
+        id="mobilePanel"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Mobile Menu"
+      >
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#solution">Solution</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#about">About</a></li>
         </ul>
-
-        <!-- Hamburger for mobile -->
-        <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="mobile-ctas">
+          <button class="btn btn-outline">Login</button>
+          <button class="btn btn-outline">Sign Up</button>
         </div>
-      </nav>
+      </div>
     </header>
 
-    <!-- Hero Section -->
-    <main class="hero">
-      <div class="hero-bg"></div>
-      <div class="hero-content">
-        <h1 class="hero-title font-serif-premium">Grow Your Digital Agency</h1>
-        <p class="hero-subtitle">
-          We craft bespoke digital experiences that blend artistry with
-          intelligence, propelling luxury brands to new heights.
-        </p>
-        <a href="#services" class="btn-discover">Discover More</a>
+    <main>
+      <div class="radial-floor" aria-hidden="true">
+        <div
+          style="
+            position: absolute;
+            left: 0;
+            top: -350px;
+            width: 35rem;
+            height: 80rem;
+            transform: rotate(-45deg);
+            border-radius: 999px;
+            background: radial-gradient(
+              68.54% 68.72% at 55.02% 31.46%,
+              hsla(0, 0%, 85%, 0.08) 0%,
+              hsla(0, 0%, 55%, 0.02) 50%,
+              hsla(0, 0%, 45%, 0) 80%
+            );
+          "
+        ></div>
+        <div
+          style="
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 14rem;
+            height: 80rem;
+            transform: translate(5%, -50%) rotate(-45deg);
+            border-radius: 999px;
+            background: radial-gradient(
+              50% 50% at 50% 50%,
+              hsla(0, 0%, 85%, 0.06) 0%,
+              hsla(0, 0%, 45%, 0.02) 80%,
+              transparent 100%
+            );
+          "
+        ></div>
+        <div
+          style="
+            position: absolute;
+            left: 0;
+            top: -350px;
+            width: 14rem;
+            height: 80rem;
+            transform: rotate(-45deg);
+            background: radial-gradient(
+              50% 50% at 50% 50%,
+              hsla(0, 0%, 85%, 0.04) 0%,
+              hsla(0, 0%, 45%, 0.02) 80%,
+              transparent 100%
+            );
+          "
+        ></div>
       </div>
+
+      <section class="hero">
+        <div class="container">
+          <div class="hero-inner">
+            <div class="animate-in stagger pill" id="introPill">
+              <span style="font-size: 14px; color: #e7e7ea">Call Support</span>
+              <span class="pill-divider"></span>
+              <span class="pill-icon" aria-hidden="true">
+                <span class="train">
+                  <span style="width: 24px; display: grid; place-items: center"
+                    >➔</span
+                  >
+                  <span style="width: 24px; display: grid; place-items: center"
+                    >➔</span
+                  >
+                </span>
+              </span>
+            </div>
+
+            <h1 id="hero-title" class="animate-in" style="margin-top: 32px">
+              <span id="tw-target" class="tw-text"
+                >100% User Friendly QuickBooks Hosting</span
+              >
+              <span id="tw-cursor" class="tw-cursor">_</span>
+            </h1>
+
+            <p class="animate-in">
+              Anytime, anywhere global access with the most cost‑effective
+              hosting by Sapience, backed by free expert support.
+            </p>
+
+            <div class="hero-ctas animate-in stagger">
+              <button class="btn"><strong>7 Days free trial</strong></button>
+              <button class="btn btn-ghost">Get Official Quote</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Welcome Section -->
+      <section class="welcome-section">
+        <div class="container">
+          <div class="welcome-inner animate-in stagger">
+            <h2>
+              Welcome to the Sapience Cloud: QuickBooks Hosting Solutions
+              Provider
+            </h2>
+            <p>
+              Sapience is one of the most trusted providers in the QuickBooks
+              Hosting industry.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Trial Section -->
+      <section class="trial-section">
+        <div class="container">
+          <div class="trial-inner animate-in stagger">
+            <h3>Try Sapience Cloud Risk Free 7 Days Trial</h3>
+            <button class="btn"><strong>Get Started</strong></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-hosting">
+        <div
+          class="hosting-buttons"
+          style="margin-bottom: 24px; display: flex; gap: 12px"
+        >
+          <button id="quickbooksBtn" class="btn btn-ghost">
+            QuickBooks Hosting
+          </button>
+          <button id="taxBtn" class="btn btn-ghost">Tax Hosting</button>
+        </div>
+        <div class="screen-wrap">
+          <div class="screen-fade" aria-hidden="true"></div>
+          <div id="quickbooksContent" class="screen-card animate-in">
+            <h2>QuickBooks Hosting Service Provider</h2>
+            <h4>QuickBooks Hosting</h4>
+            <p>
+              If you are an accounting, taxing, or bookkeeping professional,
+              Sapience Cloud is a leading QuickBooks Hosting provider. It offers
+              QuickBooks Cloud Hosting Software Services at very economical
+              pricing along with 24X7 technical support services available via
+              phone, email, or chat. The bookkeeper servers, already hosted,
+              provide significant advantages over the customary QuickBooks
+              usage. Apart from offering all essential features of the Desktop
+              version, they also bring impressive additional benefits. Moreover,
+              you can save your precious time and lessen your workload by
+              hosting your QuickBooks apps over the cloud, giving you a combined
+              platform to use all your available tools along with access to
+              other tax applications hosted via QuickBooks Hosting Services for
+              all your accounting/taxing needs.
+            </p>
+
+            <h3>Key Benefits of Sapience Cloud QuickBooks Hosting</h3>
+            <ul>
+              <li>
+                <strong
+                  >Multiple User and Flexible Access at Affordable
+                  Pricing:</strong
+                >
+                Access your QuickBooks data from any device—Mac, Linux, Windows
+                Desktop, Tablets, or Smartphones. Easily transfer files between
+                local devices and the server.
+              </li>
+              <li>
+                <strong>Seamless and Efficient Remote Printing:</strong> Print
+                invoices, reports, and documents with ease using Sapience
+                Cloud's wide-ranging printing solutions.
+              </li>
+              <li>
+                <strong>24X7 Free Technical Support:</strong> Sapience Cloud
+                offers round-the-clock support via highly experienced engineers
+                through chat, phone, and email.
+              </li>
+              <li>
+                <strong>Extremely Fast Servers:</strong> Lightning-fast access
+                to QuickBooks data with cloud computing infrastructure that
+                automatically allocates processor and memory resources according
+                to demand.
+              </li>
+              <li>
+                <strong>Customized Setup for High Efficiency:</strong> Customize
+                your QuickBooks server to access all files and client data
+                through one login, while controlling what clients can see.
+                Install your preferred software and tools on a single server.
+              </li>
+              <li>
+                <strong>Three Layers of Security:</strong> Keep your QuickBooks
+                data safe with enterprise antivirus, physical CISCO firewalls,
+                and continuous security updates.
+              </li>
+              <li>
+                <strong>Data Backup:</strong> Daily backups stored in three
+                separate locations ensure your data is always secure. Access the
+                latest working copy at any time for free.
+              </li>
+            </ul>
+          </div>
+          <div
+            id="taxContent"
+            class="screen-card animate-in"
+            style="display: none"
+          >
+            <h2>Tax Hosting</h2>
+            <h4>TaxWise Hosting</h4>
+            <p>
+              Are you looking to host United States popular taxing software,
+              TaxWise, on dedicated terminal servers? Choose the best TaxWise
+              software hosting services from Sapience Cloud LLC, supported by a
+              specialized team of technical experts available 24X7 via email,
+              chat, and phone. Sapience Cloud offers a powerful hosting platform
+              for TaxWise software to meet the requirements of accounting
+              professionals for small, medium, or large enterprises.
+            </p>
+            <p>
+              We host different versions of TaxWise software according to client
+              needs. You can access all Desktop features with our TaxWise
+              hosting service, helping professionals complete tax tasks
+              efficiently. Enjoy electronic filing and hosting of all TaxWise
+              Add-ons such as IntelliForms, Quick Tax Estimator, TaxScripts,
+              W-2/1099, Scan And Fill, Payroll Compliance Reporting, Central
+              Office Manager, and Document Manager.
+            </p>
+            <h3>Additional Advantages</h3>
+            <ul>
+              <li>
+                <strong>Anytime, Anywhere Access:</strong> Access TaxWise
+                software from anywhere across the globe. Data is stored at Tier
+                IV datacenter and backed up daily.
+              </li>
+              <li>
+                <strong>Multiple User System:</strong> Multi-user licenses allow
+                your staff to access tax returns and documents conveniently in a
+                multi-user environment.
+              </li>
+              <li>
+                <strong>MS Office Integration:</strong> Easily import and export
+                files from local systems using MS Office integration on terminal
+                servers.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="cards-band">
+        <div class="cards-stage">
+          <!-- back -->
+          <article class="tcard back" data-card>
+            <blockquote class="t-text">
+              “Can not believe this is free. If X was $5,000 a month, it would
+              be worth every penny. I plan to name my next child after X.”
+            </blockquote>
+            <p class="t-author">Devin R. — Growth Marketing Lead @ OpenAI</p>
+            <button class="t-btn" data-shuffle>Shuffle</button>
+          </article>
+
+          <!-- middle -->
+          <article class="tcard middle" data-card>
+            <blockquote class="t-text">
+              “My boss thinks I know what I'm doing. Honestly, I just read this
+              newsletter.”
+            </blockquote>
+            <p class="t-author">Adrian Y. — Product Marketing @ Meta</p>
+            <button class="t-btn" data-shuffle>Shuffle</button>
+          </article>
+
+          <!-- front -->
+          <article class="tcard front" data-card>
+            <blockquote class="t-text">
+              “I feel like I've learned as much from X as I did completing my
+              masters. It's the first thing I read every morning.”
+            </blockquote>
+            <p class="t-author">Jenn F. — Marketing Director @ Square</p>
+            <button class="t-btn" data-shuffle>Shuffle</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="band animate-in" id="quote-band">
+        <div class="container grid-2">
+          <!-- Quote form -->
+          <aside class="panel animate-in">
+            <header class="panel-head">
+              <h3 class="panel-title">Get An Official Quote</h3>
+              <!-- <span class="panel-carat">›</span> -->
+            </header>
+
+            <form
+              class="panel-body form-grid stagger"
+              action="#"
+              method="post"
+              novalidate
+            >
+              <label class="f-label"
+                >Name:<span class="req">*</span>
+                <input
+                  class="f-input"
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </label>
+
+              <label class="f-label"
+                >Email:<span class="req">*</span>
+                <input
+                  class="f-input"
+                  type="email"
+                  name="email"
+                  placeholder="Email Address"
+                  required
+                />
+              </label>
+
+              <label class="f-label"
+                >Contact No.:<span class="req">*</span>
+                <input
+                  class="f-input"
+                  type="tel"
+                  name="phone"
+                  placeholder="Contact No."
+                  required
+                />
+              </label>
+
+              <label class="f-label"
+                >Message:
+                <textarea
+                  class="f-input f-textarea"
+                  name="message"
+                  rows="5"
+                  placeholder="Message"
+                ></textarea>
+              </label>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-outline">Submit</button>
+              </div>
+            </form>
+          </aside>
+        </div>
+      </section>
+
+      <section class="support-band">
+        <div class="container support-wrap">
+          <div class="support-icon" aria-hidden="true">☎</div>
+          <div class="support-copy">
+            <h4 class="support-title">
+              Have a question or need a custom quote?
+            </h4>
+            <p class="support-lines">
+              Please call on our toll-free no.<br />
+              CALL SALES: <span class="hl">+1-855-632-5500</span> | CALL
+              SUPPORT: <span class="hl">+1-855-632-5500</span>
+            </p>
+          </div>
+          <div class="support-figure" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <h5 class="footer-head">Services Information</h5>
+      <ul class="footer-list">
+        <li><a href="#qb-support">+ QuickBooks Support</a></li>
+        <li><a href="#pricing">+ Pricing</a></li>
+        <li><a href="#app-hosting">+ Application Hosting</a></li>
+        <li><a href="#tax-sw">+ Tax Software Hosting</a></li>
+        <li><a href="#sla">+ Service Level Agreement</a></li>
+        <li><a href="#contact">+ Contact Us</a></li>
+        <li><a href="#cancel">+ Cancellation Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5 class="footer-head">Our Services</h5>
+      <ul class="footer-list">
+        <li><a href="#qb-hosting">+ QuickBooks Hosting</a></li>
+        <li><a href="#peachtree">+ PeachTree Hosting</a></li>
+        <li><a href="#quicken">+ Quicken Hosting</a></li>
+        <li><a href="#myob">+ MYOB Hosting</a></li>
+        <li><a href="#benefits">+ Benefits of QuickBooks Hosting</a></li>
+        <li><a href="#drake">+ Drake Hosting</a></li>
+        <li><a href="#proseries">+ ProSeries Hosting</a></li>
+        <li><a href="#lacerte">+ Lacerte Hosting</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5 class="footer-head">More</h5>
+      <ul class="footer-list">
+        <li><a href="#taxwise">+ Taxwise Hosting</a></li>
+        <li><a href="#atx">+ ATX Hosting</a></li>
+        <li><a href="#act-sage">+ ACT! by Sage Hosting</a></li>
+        <li><a href="#workgroup">+ Workgroup Server Hosting</a></li>
+        <li><a href="#trial">+ Free Trial</a></li>
+        <li><a href="#qb-addons">+ QuickBooks Add-ons</a></li>
+        <li><a href="#proseries-tax">+ ProSeries Tax Software</a></li>
+        <li><a href="#qb-cloud">+ QuickBooks Cloud Hosting</a></li>
+        <li><a href="#web-design">+ Web Design</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5 class="footer-head brand-accent">Sapience Cloud</h5>
+      <div class="footer-info">
+        <p>USA Office: 122 St. Ives Crossing, Stockbridge, Georgia-30281</p>
+        <p>24 x 7 Sales & Support</p>
+        <p>Call Sales: +1-855-632-5500 (Toll Free)</p>
+        <p>sales@sapiencecloud.com</p>
+        <p>support@sapiencecloud.com</p>
+      </div>
+
+      <form class="subscribe" action="#" method="post" novalidate>
+        <input class="sub-input" type="email" placeholder="Email Address" aria-label="Email Address" />
+        <button class="btn btn-outline sub-btn" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</footer>
+
+
     </main>
 
-    <!-- Experience Section -->
-    <section class="experience">
-      <div class="container grid-2">
-        <div class="experience-content">
-          <h2 class="headline">We’re the solution to your businesses</h2>
-          <p class="text">
-            We offer a comprehensive suite of digital solutions tailored to
-            elevate your brand and drive sustainable growth. Our expertise spans
-            across various domains, ensuring a holistic approach to your
-            business success.
-          </p>
-
-          <!-- Features -->
-          <div class="features">
-            <div class="feature">
-              <span class="material-symbols-outlined">search</span>
-              <span>SEO</span>
-            </div>
-            <div class="feature">
-              <span class="material-symbols-outlined">groups</span>
-              <span>SMO</span>
-            </div>
-            <div class="feature">
-              <span class="material-symbols-outlined">design_services</span>
-              <span>Website Design</span>
-            </div>
-            <div class="feature">
-              <span class="material-symbols-outlined">campaign</span>
-              <span>Digital Marketing</span>
-            </div>
-          </div>
-
-          <!-- Progress -->
-          <div class="progress">
-            <div class="progress-label">
-              <p>Digital Marketing</p>
-              <span class="percent">77%</span>
-            </div>
-            <div class="progress-bar">
-              <div style="width: 77%"></div>
-            </div>
-          </div>
-
-          <!-- Button -->
-          <div class="btn-wrap">
-            <button class="btn-dark">
-              <span>Discover More</span>
-              <span class="material-symbols-outlined">arrow_forward</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- Right Image -->
-        <div class="experience-image">
-          <img src="experiance.png" alt="Experience" />
-        </div>
-      </div>
-    </section>
-
-    <!-- Call to Action Section -->
-    <section class="cta">
-      <div class="container text-center">
-        <h2 class="headline">
-          Let’s Discuss How to Make your Business Better.
-        </h2>
-        <p class="text">
-          We're eager to explore how our expertise can propel your business
-          forward. Let's connect and discuss your goals.
-        </p>
-        <button class="btn-gold">
-          <span>Discover More</span>
-          <span class="material-symbols-outlined">arrow_forward</span>
-        </button>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="services">
-      <h1>Services we’re offering</h1>
-      <p>
-        Explore our curated services, meticulously designed to create a lasting
-        digital impact for your luxury brand.
-      </p>
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon">
-            <span class="material-symbols-outlined">web</span>
-          </div>
-          <h3>Website Design</h3>
-          <p>
-            Crafting immersive digital flagships that are as elegant as they are
-            functional.
-          </p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <span class="material-symbols-outlined">brush</span>
-          </div>
-          <h3>Graphic Design</h3>
-          <p>
-            Creating a visual language of luxury that communicates your brand's
-            unique story.
-          </p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <span class="material-symbols-outlined">trending_up</span>
-          </div>
-          <h3>SEO</h3>
-          <p>
-            Elevating your digital presence to the top of search, where prestige
-            belongs.
-          </p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <span class="material-symbols-outlined">groups</span>
-          </div>
-          <h3>SMO</h3>
-          <p>
-            Curating a sophisticated social media presence that resonates with
-            an elite audience.
-          </p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <span class="material-symbols-outlined">draw</span>
-          </div>
-          <h3>Content Writing</h3>
-          <p>
-            Weaving eloquent narratives that capture the essence of your brand's
-            luxury.
-          </p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <span class="material-symbols-outlined">movie</span>
-          </div>
-          <h3>Video Advertising</h3>
-          <p>
-            Producing cinematic video content that evokes desire and drives
-            engagement.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- COMMITMENT -->
-    <section class="commitment">
-      <div class="content">
-        <h2>We’re Committed to Deliver the Top High Quality Services</h2>
-        <p>
-          Our unwavering commitment to excellence is the cornerstone of your
-          brand's digital legacy.
-        </p>
-        <div class="commitment-grid">
-          <div class="commitment-card">
-            <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk8ZTZPevYIE5hqGc6iuYhu2H1jWmXjMdGiTYmwUj8t11nL-i0i_jJLjHzQPpnMtl9xf-WXUThx5pZgK9Wtv0mjpt1aHZGxk3tFjQ2r0rwa3Gy0APf3apENmbwaZYy8PVlZV92U_uq8mhLDvICtN0-p6qwswTai6-y9M8ztuGe3_FpaveGwd33XqjFjEGCsO3NQjmva8TP3EpXHLx9M4soMG7-VbwPkFr0ajSaPkg_e0Rh8mbu4vVvc6m_VTpOUJlxryt7c-1L1Dg"
-              alt="Business Growth Chart"
-            />
-            <h3>We Grow Businesses</h3>
-            <p>
-              Our strategies are precision-engineered for exponential growth and
-              unrivaled ROI.
-            </p>
-          </div>
-          <div class="commitment-card">
-            <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2vup5RC3fwVYvyVJWzu8wREw-MPgFs4m2MK7s0CfYenjvRxxTY8NGw9p3z_q4YTvCMr9eBag2WnrA1LnlB4qWHVJ5H4AdC9xnt9MCogYWifCNfMvrtpPwzPkuGMTcE86leN0kh3VWstnn0kPMntWztA7myI60DuNDwSRmNzd3cpA3ChLTPj4Cw7oid8l29glvv02lTzO9hNf166LoH_3X758j7mGpQJ7t_naRWAIp2DXaccUMH6uwkYnYf6ISD6VlQnbioW-jWbI"
-              alt="Marketing Campaign"
-            />
-            <h3>Quality Marketing</h3>
-            <p>
-              We deploy sophisticated marketing techniques to ensure your
-              brand's distinction.
-            </p>
-          </div>
-          <div class="commitment-card">
-            <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE8JVl0dHNM5X_JBby7_IZJRZGlNcLGp0l4oI3CJ0ebwvDlhaZmcaD-0JmXFEwZxBKnOzAr1auK8pXQT0LTAcQFTT3vTSE2SnprUdMONT_CVa6EL_WJ57epiiS-LOp9VGQDGF2384kaGa1ciYWzTZ-Z0X6RL73SUOEOPiNNfvzkbW39nXGJefAYl4dNJixMwiINzCrznVkK2KP_4bLpEGdgM1OjVMvMdajNxB5DglEz85-v1bbw_bkw-CrX3vKwqUJfAOk8dVvfV4"
-              alt="Perfect Business Solution"
-            />
-            <h3>Perfect Solution</h3>
-            <p>
-              We devise bespoke solutions that address your unique challenges
-              with finesse.
-            </p>
-          </div>
-          <div class="commitment-card">
-            <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ3VrUZV3fNeufsZCeZqh3vxX50dGEcOU8WDxZ-D4maex5W1K6XkOHz2PwX-V37SbtGckS_h4lyXMaP25bJzU635QNkctq0buZCE0Rmb7wWoNmaNv4XqdQvRtuYXSH9vGDEVa_Cn8XFKUkNvp-9wTY-PWMUaI6EolLCzd4Bz2nZLnCvXAqxqjjb8Lg2_9z96J2_JdunyaB7vbsbCh50a72Ou3whV8kv9flXtD7Fji_8l2LSxWAH-IOxy-8yg5p4FPP-MXheBuNuCA"
-              alt="Skilled Developers"
-            />
-            <h3>Skilled Developers</h3>
-            <p>
-              Our elite developers deliver flawless execution with unparalleled
-              precision.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services Section -->
-    <section
-      class="font-sans"
-      style="font-family: 'Work Sans', 'Noto Sans', sans-serif"
-    >
-      <div class="choose-container">
-        <!-- Heading -->
-        <div class="section-header">
-          <h2>Get to know us</h2>
-          <h1>Why you should choose our agency</h1>
-        </div>
-
-        <!-- Cards Grid -->
-        <div class="cards-grid">
-          <!-- Card 1 -->
-          <div class="card">
-            <div class="icon">
-              <span class="material-symbols-outlined">workspace_premium</span>
-            </div>
-            <div class="card-content">
-              <h3>Leader in Digital Marketing</h3>
-              <p>
-                Our agency is recognized as a leader in the digital marketing
-                industry, consistently delivering innovative and effective
-                strategies.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="card">
-            <div class="icon">
-              <span class="material-symbols-outlined">trending_up</span>
-            </div>
-            <div class="card-content">
-              <h3>Highest Success Rates</h3>
-              <p>
-                We boast some of the highest success rates in the industry, with
-                a proven track record of achieving exceptional results for our
-                clients.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="card">
-            <div class="icon">
-              <span class="material-symbols-outlined">lightbulb</span>
-            </div>
-            <div class="card-content">
-              <h3>Quality Marketing Solutions</h3>
-              <p>
-                We are committed to providing top-tier marketing solutions,
-                tailored to meet the unique needs and goals of each client.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="testimonials-section">
-      <div class="container">
-        <!-- Heading -->
-        <div class="heading">
-          <h1>What Our Clients Say</h1>
-          <p>We are trusted by the best companies in the world.</p>
-        </div>
-
-        <!-- Testimonials Grid -->
-        <div class="testimonials-grid">
-          <!-- Testimonial 1 -->
-          <div class="testimonial-card">
-            <div class="testimonial-header">
-              <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk-g08VkfmIHZfbvHoivu4jWKqDIyfbhPpdNNao2KW-bVl12KXEvB9273i1zB6H9BPrkx3EhGh01GbS_gZ0yEZ7SNn3p87uH2w9CTOnlCiJaE7pyKpySJ4wDimlkYlfkjycV5itV-bPXwNvO-mqCot_jffpidInwaSovkxNQnIgs0ZW46on18Ng9uybVwKBAYbFFjQPhuATkQZwxoZUAqQq_xYx1Rd0jl9FlyqbAaF3YLxJKy13gRTCNIgmbNatAPUz6LGEExGo4A"
-                alt="Sarah Johnson"
-              />
-              <div>
-                <p class="name">Sarah Johnson</p>
-                <p class="role">CEO, Innovate Solutions</p>
-              </div>
-            </div>
-            <div class="stars">
-              <span class="material-symbols-outlined">star</span>
-              <span class="material-symbols-outlined">star</span>
-              <span class="material-symbols-outlined">star</span>
-              <span class="material-symbols-outlined">star</span>
-              <span class="material-symbols-outlined">star</span>
-            </div>
-            <p class="testimonial-text">
-              "Sapience Info Train transformed our digital presence. Their
-              innovative strategies and dedicated team delivered exceptional
-              results, exceeding our expectations."
-            </p>
-          </div>
-
-          <!-- Testimonial 2 -->
-          <div class="testimonial-card">
-            <div class="testimonial-header">
-              <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDb2estnH2HKHmfqjFq6nXGtb4Lpl8BgNeu8dHw6CSBHPj8kH8ao5i6cd2Kk76G5R7aySucWicpYZ5NiwVRvieK55frxTloytGOe4h6Cgtzaq2ZPXyA5cXifQ_6a2zmHrNJMhzqb7Hj-RN7G16rJs75S8W-jhb7zVrwX60Arpyw4gjcfdIjlpL-aKIvBuHiuujDDUqVRSmdyPT_T9SaCbcZ_nQ2rZ-kEtTMTwv7bQuYUAtNfo6ThgN5vg5jRAHmL2nByrbaFSlQIKI"
-                alt="Michael Chen"
-              />
-              <div>
-                <p class="name">Michael Chen</p>
-                <p class="role">CTO, FutureTech Inc.</p>
-              </div>
-            </div>
-            <div class="stars">
-              <span class="material-symbols-outlined">star</span>
-              <span class="material-symbols-outlined">star</span>
-              <span class="material-symbols-outlined">star</span>
-              <span class="material-symbols-outlined">star</span>
-              <span class="material-symbols-outlined">star</span>
-            </div>
-            <p class="testimonial-text">
-              "The technical expertise and creative solutions provided by
-              Sapience Info Train were instrumental in our project's success.
-              Highly recommend their services."
-            </p>
-          </div>
-
-          <!-- Testimonial 3 -->
-          <div class="testimonial-card">
-            <div class="testimonial-header">
-              <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDN5_0WgB15jDjZBa7DYKFe6WxempGyT6DZG0Sxk98pPA2t6RDk-5_Qy7ONxEQbyNY6IjKmjQezHGL_2xZwEAmb6H8Zq5ntzada2OFZURADkVTPKbCqb4oA4tLvSyPVtB_sS21BAJKWMQynPyfdfB76Z6yd4i_zy7XABqPYwBzJ5FX6lPZ3u4iyHE0fv7ppIYSWNR9Nbdap_ndImC3OuRCWBStZD-jNPXzVspPYXOCONp0sjXo0-ywWAC1rkVRvvZzDWbCtCkBcvpo"
-                alt="Emily Davis"
-              />
-              <div>
-                <p class="name">Emily Davis</p>
-                <p class="role">Marketing Director, Global Brands</p>
-              </div>
-            </div>
-            <div class="stars">
-              <span class="material-symbols-outlined">star</span>
-              <span class="material-symbols-outlined">star</span>
-              <span class="material-symbols-outlined">star</span>
-              <span class="material-symbols-outlined">star</span>
-              <span class="material-symbols-outlined">star</span>
-            </div>
-            <p class="testimonial-text">
-              "Working with Sapience Info Train was a pleasure. Their team's
-              professionalism and commitment to quality ensured our marketing
-              goals were not only met but surpassed."
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Recently Completed Work Section -->
-    <section class="recent-work">
-      <div class="layout-container">
-        <h2 class="title font-serif">Explore our recently completed work</h2>
-
-        <!-- Project Cards -->
-        <div class="projects-grid">
-          <div class="project-card">
-            <div
-              class="image"
-              style="
-                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAtTRhadyK8ekbLym2GmjoTcXN5e3A0artJaYnoehKTTD_JT2xfuUAhKhHai-qItnDdKSThG_AcQBC6I-B4AvpEPdyLF2uhR3szmcnKxZmq9W2LehPbB50DDKS7zMi9Qz7WyjCOyjHPeAth82KNdXYnXc7qvdpnxg-SofHNzc0QAZL75Non3ZS3yE2T3dbP67qttxJe-m7Q5YTBOFKYatYMT4G7dkBX6nkvsGXrwbIK0keZyLYW6mA3jEOh7TG0pUHFK-WF2__SGQ4');
-              "
-            ></div>
-            <div class="overlay">
-              <h3 class="font-serif">Project Title</h3>
-              <p>Brief description of the project.</p>
-            </div>
-          </div>
-          <div class="project-card">
-            <div
-              class="image"
-              style="
-                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAtTRhadyK8ekbLym2GmjoTcXN5e3A0artJaYnoehKTTD_JT2xfuUAhKhHai-qItnDdKSThG_AcQBC6I-B4AvpEPdyLF2uhR3szmcnKxZmq9W2LehPbB50DDKS7zMi9Qz7WyjCOyjHPeAth82KNdXYnXc7qvdpnxg-SofHNzc0QAZL75Non3ZS3yE2T3dbP67qttxJe-m7Q5YTBOFKYatYMT4G7dkBX6nkvsGXrwbIK0keZyLYW6mA3jEOh7TG0pUHFK-WF2__SGQ4');
-              "
-            ></div>
-            <div class="overlay">
-              <h3 class="font-serif">Project Title</h3>
-              <p>Brief description of the project.</p>
-            </div>
-          </div>
-          <div class="project-card">
-            <div
-              class="image"
-              style="
-                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAtTRhadyK8ekbLym2GmjoTcXN5e3A0artJaYnoehKTTD_JT2xfuUAhKhHai-qItnDdKSThG_AcQBC6I-B4AvpEPdyLF2uhR3szmcnKxZmq9W2LehPbB50DDKS7zMi9Qz7WyjCOyjHPeAth82KNdXYnXc7qvdpnxg-SofHNzc0QAZL75Non3ZS3yE2T3dbP67qttxJe-m7Q5YTBOFKYatYMT4G7dkBX6nkvsGXrwbIK0keZyLYW6mA3jEOh7TG0pUHFK-WF2__SGQ4');
-              "
-            ></div>
-            <div class="overlay">
-              <h3 class="font-serif">Project Title</h3>
-              <p>Brief description of the project.</p>
-            </div>
-          </div>
-          <!-- Repeat more project-card blocks as needed -->
-        </div>
-
-        <!-- Stats -->
-        <div class="stats-grid">
-          <div class="stat-card">
-            <span class="material-symbols-outlined">task_alt</span>
-            <p class="number font-serif">840</p>
-            <p class="label">Projects Completed</p>
-          </div>
-          <div class="stat-card">
-            <span class="material-symbols-outlined">sentiment_satisfied</span>
-            <p class="number font-serif">980</p>
-            <p class="label">Happy Customers</p>
-          </div>
-          <div class="stat-card">
-            <span class="material-symbols-outlined">autorenew</span>
-            <p class="number font-serif">660</p>
-            <p class="label">Repeat Customers</p>
-          </div>
-          <div class="stat-card">
-            <span class="material-symbols-outlined">groups</span>
-            <p class="number font-serif">120</p>
-            <p class="label">Expert Team Members</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section
-      id="contact"
-      style="
-        background-image: linear-gradient(
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)
-          ),
-          url('https://lh3.googleusercontent.com/aida-public/AB6AXuDGTALbMi0POPHw6mRYfhIXpmQX_ILRfi36K6XRYh7coawkJoNABVIMdY5ZHGOGyVUxp8uxnwp7bY5DNrasKrSe0NNf1JZVIFsiDluVngklkbLXpP-abncabY_OpytlVOeEZTu8KNvzDRkZFnVbruW8p9X0pk1EO582OMO7uEmpuwQWzHM-9nHAZVdptCnikNpg_h2eWe09ErXkhXOCxtd8KOhGES0tLRWUK-JfQUSxqnvtMg85dlAJ5sye2_yJ77qUKzrsytbvvYI');
-      "
-    >
-      <div class="overlay"></div>
-      <div class="container">
-        <h1 class="font-serif">Creating Online Magic</h1>
-        <p>
-          Let's build something extraordinary together. Reach out and let the
-          magic begin.
-        </p>
-        <form>
-          <div class="grid">
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
-            <input type="tel" placeholder="Phone" />
-            <input type="text" placeholder="Subject" />
-            <textarea placeholder="Message" rows="4"></textarea>
-          </div>
-          <button type="submit">Send a Message</button>
-        </form>
-      </div>
-    </section>
-
-    <!-- News & Articles Section -->
-    <section id="news">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="font-serif">News & Articles</h2>
-          <p>Stay updated with our latest insights and industry trends.</p>
-        </div>
-        <div class="news-grid">
-          <div class="news-card">
-            <div
-              class="news-image"
-              style="
-                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCRICi6qFBDANg35QrjYEZ841YJzXY580vxwjcMDZmXuKrWqXG1xm7CCm9gIZeYzXsWIOkBXPls_TXqt_0ElzcTgPoxY8uC0alMUcJaxJ4pVkcBcIKlB0IrbjMRSlF0qzmT0ex4iA9Y2u0OtSSR-WZ-OhMqVGPOQV0mUAKAV5RTPJp95CKbBf2_OZTEFnV4_PM-uLGMDStce2G2T-ZVxxU812feDeMb7gjDyTvNbhqmDVEn0Sl64CEJKuqYfatRbqM75hZ0YtPtmH0');
-              "
-            ></div>
-            <div class="news-content">
-              <div class="news-meta">
-                <span>July 15, 2024</span> | <span>By Admin</span> |
-                <span>3 Comments</span>
-              </div>
-              <h3 class="font-serif">
-                Five ways that can develop your business website
-              </h3>
-            </div>
-          </div>
-
-          <div class="news-card">
-            <div
-              class="news-image"
-              style="
-                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD_ulGTqKwSWjqonqsR8s23DoRU8YmrPuLoRhiwa54VGnNT2WiJhifFpmRXMP_iv3p93VuRcUe4gVhlPNf0A4A8l9ebnoMEf0wJ-mxE_Q0RpNnDypf0gOfp7rbMPMXh5KQFhckHfVCEYN6Bfbix8A5WtWnBjayVfXxW6Pj3rs6HwBNVDZBIsp-Oc9Fm6KCFZ2fyElMnepI0FiX16bX-VIdhZXiRs88bAmH69GLGHWmF9vJUvi39ruxcR6WmpD7Z9Yl3HNXfVrmN3gA');
-              "
-            ></div>
-            <div class="news-content">
-              <div class="news-meta">
-                <span>June 20, 2024</span> | <span>By Admin</span> |
-                <span>5 Comments</span>
-              </div>
-              <h3 class="font-serif">The future of digital marketing</h3>
-            </div>
-          </div>
-
-          <div class="news-card">
-            <div
-              class="news-image"
-              style="
-                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAoCF1hhm42MQUn5bEygEm_iV40pMYkjU4QVtEiE_SeIFMVus9cIUlOMIc_fzzehIkydxEaZ80XhS8z_1fg0dMkb-zMfF6U2T6CZwyyiRCssNWBrqI_gR1CfTfzysB4O3MRqqL4ImrswkHdG4V3sIjKInyigzUo9k5lJZNdeeLwC3RbxOzMY9d3RqC4KMCxHePixqqvXsgdE_YRtqgTlpe5tAl0BmwiH1H6Sw7HhSZM3jKnu5GH2xtKU69TlpSgOzLY7BjasReYaXc');
-              "
-            ></div>
-            <div class="news-content">
-              <div class="news-meta">
-                <span>May 25, 2024</span> | <span>By Admin</span> |
-                <span>2 Comments</span>
-              </div>
-              <h3 class="font-serif">
-                How to create a successful online store
-              </h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Footer -->
-    <footer>
-      <div class="footer-container">
-        <!-- Brand -->
-        <div>
-          <h3>Digital Agency</h3>
-          <p>
-            Crafting bespoke digital experiences that captivate and convert.
-            Your vision, our expertise.
-          </p>
-        </div>
-
-        <!-- Quick Links -->
-        <div>
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-
-        <!-- Services -->
-        <div>
-          <h4>Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Branding</a></li>
-            <li><a href="#">SEO</a></li>
-            <li><a href="#">Marketing</a></li>
-          </ul>
-        </div>
-
-        <!-- Connect -->
-        <div>
-          <h4>Connect</h4>
-          <div class="footer-social">
-            <a
-              href="https://www.instagram.com/sapience.infotrain_/"
-              aria-label="Instagram"
-            >
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a
-              href="https://www.facebook.com/people/Sapience-Infotrain/61575686909885/"
-              aria-label="Facebook"
-            >
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/company/sapience-infotrain/"
-              aria-label="LinkedIn"
-            >
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="copyright">© 2024 Digital Agency. All rights reserved.</div>
-    </footer>
-
-    <!-- Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-      rel="stylesheet"
-    />
-
     <script>
-      const hamburger = document.getElementById("hamburger");
-      const navLinks = document.getElementById("navLinks");
+      // Header scroll state
+      const header = document.querySelector(".site-header");
+      const navWrap = document.querySelector(".nav-wrap");
+      const onScroll = () => {
+        if (window.scrollY > 50) {
+          header.classList.add("is-scrolled");
+        } else {
+          header.classList.remove("is-scrolled");
+        }
+      };
+      window.addEventListener("scroll", onScroll, { passive: true });
 
-      hamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
+      // Mobile menu
+      const btn = document.getElementById("menuBtn");
+      const panel = document.getElementById("mobilePanel");
+      btn.addEventListener("click", () => {
+        const open = panel.classList.toggle("open");
+        btn.setAttribute("aria-expanded", String(open));
       });
-      document.addEventListener("DOMContentLoaded", () => {
-        const serviceBtn = document.querySelector(".service-btn");
-        const dropdown = document.querySelector(".dropdown");
 
-        serviceBtn.addEventListener("click", (e) => {
-          e.preventDefault(); // prevent page jump
-          dropdown.classList.toggle("active");
+      // If this observer already exists in the page, no need to duplicate.
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("in-view");
+              io.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
+
+      // Observe any new animate-in items, including the H1
+      document
+        .querySelectorAll(".animate-in, .stagger")
+        .forEach((el) => io.observe(el));
+      // Ensure animate-in observer exists (from earlier steps)
+      (function ensureIO() {
+        if (window.__io_ready) return;
+        const io = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((e) => {
+              if (e.isIntersecting) {
+                e.target.classList.add("in-view");
+                io.unobserve(e.target);
+              }
+            });
+          },
+          { threshold: 0.15 }
+        );
+        document
+          .querySelectorAll(".animate-in, .stagger")
+          .forEach((el) => io.observe(el));
+        window.__io_ready = true;
+      })();
+
+      function createTypewriter(opts) {
+        const {
+          target,
+          cursor,
+          texts,
+          speed = 70,
+          deleteSpeed = 40,
+          waitTime = 1500,
+          loop = true,
+          showCursor = true,
+          hideCursorOnType = true,
+          startMode = "delete-first", // 'delete-first' means start by erasing preloaded full word
+        } = opts;
+
+        let display = target.textContent || ""; // start with preloaded text
+        let idx = display.length; // char index begins at end (full word shown)
+        let wordIdx = 0; // current word in list (matching the preloaded word)
+        let deleting = startMode === "delete-first"; // begin by deleting
+
+        function setCursorHidden(hidden) {
+          if (!cursor) return;
+          if (hideCursorOnType) {
+            cursor.classList.toggle("hidden", hidden);
+          }
+        }
+
+        function tick() {
+          const current = texts[wordIdx];
+
+          if (deleting) {
+            if (display.length) {
+              display = display.slice(0, -1);
+              target.textContent = display;
+              setCursorHidden(true);
+              setTimeout(tick, deleteSpeed);
+            } else {
+              deleting = false;
+              setCursorHidden(false);
+              idx = 0;
+              // move to next word after erase
+              wordIdx = (wordIdx + 1) % texts.length;
+              if (!loop && wordIdx === 0) {
+                return;
+              }
+              setTimeout(tick, 200);
+            }
+          } else {
+            if (idx < texts[wordIdx].length) {
+              display += texts[wordIdx][idx];
+              idx += 1;
+              target.textContent = display;
+              setCursorHidden(true);
+              setTimeout(tick, speed);
+            } else {
+              setCursorHidden(false);
+              // when fully typed, wait then delete (continue loop)
+              setTimeout(() => {
+                deleting = true;
+                tick();
+              }, waitTime);
+            }
+          }
+        }
+
+        function start() {
+          if (cursor) {
+            cursor.style.display = showCursor ? "inline-block" : "none";
+          }
+          // If the preloaded word isn't the first in texts, align indexes
+          const preload = target.textContent || "";
+          const foundIdx = texts.findIndex((w) => w === preload);
+          if (foundIdx >= 0) {
+            wordIdx = foundIdx;
+          }
+          // Ensure idx reflects current position when switching to typing mode later
+          idx = deleting ? preload.length : 0;
+          tick();
+        }
+
+        return { start };
+      }
+
+      window.addEventListener("DOMContentLoaded", () => {
+        const title = document.getElementById("hero-title");
+        const twTarget = document.getElementById("tw-target");
+        const twCursor = document.getElementById("tw-cursor");
+
+        // Words list (first one is preloaded in HTML)
+        const words = [
+          "100% User Friendly QuickBooks Hosting",
+          "Cloud-Based Smart Client Technology",
+          "24X7 Hosting Support",
+        ];
+
+        const typer = createTypewriter({
+          target: twTarget,
+          cursor: twCursor,
+          texts: words,
+          speed: 70,
+          deleteSpeed: 40,
+          waitTime: 1500,
+          loop: true,
+          showCursor: true,
+          hideCursorOnType: true,
+          startMode: "delete-first", // erase the preloaded full word, then continue
         });
 
-        // Close dropdown when clicking outside
-        document.addEventListener("click", (e) => {
-          if (!dropdown.contains(e.target)) {
-            dropdown.classList.remove("active");
+        let started = false;
+        const start = () => {
+          if (!started) {
+            started = true;
+            typer.start();
+          }
+        };
+
+        // Start after the H1 entrance completes (if using animate-in)
+        title.addEventListener("transitionend", (e) => {
+          if (e.propertyName === "opacity") {
+            start();
           }
         });
+
+        // Fallback: start shortly after load in case no transition event fires
+        setTimeout(() => {
+          const isInView = title.classList.contains("in-view");
+          const opacity1 = parseFloat(getComputedStyle(title).opacity) >= 1;
+          if (!started && (isInView || opacity1)) start();
+        }, 400);
+      });
+
+      const quickbooksBtn = document.getElementById("quickbooksBtn");
+      const taxBtn = document.getElementById("taxBtn");
+      const quickbooksContent = document.getElementById("quickbooksContent");
+      const taxContent = document.getElementById("taxContent");
+
+      quickbooksBtn.onclick = () => {
+        quickbooksContent.style.display = "block";
+        taxContent.style.display = "none";
+      };
+
+      taxBtn.onclick = () => {
+        quickbooksContent.style.display = "none";
+        taxContent.style.display = "block";
+      };
+      (function ensureIO() {
+        if (window.__io_ready) return;
+        const io = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((e) => {
+              if (e.isIntersecting) {
+                e.target.classList.add("in-view");
+                io.unobserve(e.target);
+              }
+            });
+          },
+          { threshold: 0.15 }
+        );
+        document
+          .querySelectorAll(".animate-in, .stagger")
+          .forEach((el) => io.observe(el));
+        window.__io_ready = true;
+      })();
+      //   -------------------------------------
+      const stage = document.querySelector(".cards-stage");
+      const getTriplet = () => Array.from(stage.querySelectorAll(".tcard"));
+
+      function cyclePositions() {
+        const cards = getTriplet();
+        // collect current roles
+        const roles = cards.map((c) =>
+          c.classList.contains("front")
+            ? "front"
+            : c.classList.contains("middle")
+            ? "middle"
+            : "back"
+        );
+        // rotate roles: [front, middle, back] -> [back, front, middle]
+        const next = [roles[2], roles[0], roles[1]];
+
+        // remove and add classes to match rotated roles
+        cards.forEach((card, i) => {
+          card.classList.remove("front", "middle", "back");
+          card.classList.add(next[i]);
+        });
+      }
+
+      // attach listeners to all shuffle buttons
+      document.querySelectorAll("[data-shuffle]").forEach((btn) => {
+        btn.addEventListener("click", cyclePositions);
       });
     </script>
   </body>
