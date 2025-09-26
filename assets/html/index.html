@@ -26,7 +26,7 @@
                   <stop offset="1" stop-color="#2BC8B7" />
                 </linearGradient>
               </defs>
-              <img style="margin-left:-100px;" src="logo.png" alt="">
+              <!-- <img style="margin-left:-100px;" src="logo.png" alt=""> -->
               <!-- trimmed for brevity -->
             </svg>
           </a>
@@ -265,8 +265,13 @@
       <section class="hero">
         <div class="container">
           <div class="hero-inner">
-            <div class="animate-in stagger pill" id="introPill">
-              <span style="font-size: 14px; color: #e7e7ea">Call Support</span>
+            <!-- Call Support Trigger -->
+            <div
+              class="animate-in stagger pill"
+              id="introPill"
+              style="cursor: pointer"
+            >
+              <span style="font-size: 14px; color: #e7e7ea">Need Help - Leave a message</span>
               <span class="pill-divider"></span>
               <span class="pill-icon" aria-hidden="true">
                 <span class="train">
@@ -281,14 +286,14 @@
             </div>
 
             <h1 id="hero-title" class="animate-in" style="margin-top: 32px">
-              <span id="tw-target" class="tw-text"
-                >100% User Friendly QuickBooks Hosting</span
-              >
+              <span id="tw-target" class="tw-text">
+                100% User Friendly QuickBooks Hosting
+              </span>
               <span id="tw-cursor" class="tw-cursor">_</span>
             </h1>
 
             <p class="animate-in">
-              Anytime, anywhere global access with the most cost‑effective
+              Anytime, anywhere global access with the most cost-effective
               hosting by Sapience, backed by free expert support.
             </p>
 
@@ -299,6 +304,26 @@
           </div>
         </div>
       </section>
+
+      <!-- Popup Form -->
+      <div class="popup-overlay" id="popupForm">
+        <div class="popup-content">
+          <span class="close-btn" id="closePopup">&times;</span>
+          <h2>Contact Support</h2>
+          <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <input type="tel" placeholder="Your Phone" required />
+            <input type="text" placeholder="Subject" required />
+            <textarea
+              placeholder="Type your message..."
+              rows="4"
+              required
+            ></textarea>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+      </div>
 
       <!-- Welcome Section -->
       <section class="welcome-section">
@@ -568,318 +593,354 @@
       </section>
 
       <footer class="site-footer">
-  <div class="container footer-grid">
-    <div class="footer-col">
-      <h5 class="footer-head">Services Information</h5>
-      <ul class="footer-list">
-        <li><a href="#qb-support">+ QuickBooks Support</a></li>
-        <li><a href="#pricing">+ Pricing</a></li>
-        <li><a href="#app-hosting">+ Application Hosting</a></li>
-        <li><a href="#tax-sw">+ Tax Software Hosting</a></li>
-        <li><a href="#sla">+ Service Level Agreement</a></li>
-        <li><a href="#contact">+ Contact Us</a></li>
-        <li><a href="#cancel">+ Cancellation Policy</a></li>
-      </ul>
-    </div>
+        <div class="container footer-grid">
+          <div class="footer-col">
+            <h5 class="footer-head">Services Information</h5>
+            <ul class="footer-list">
+              <li><a href="#qb-support">+ QuickBooks Support</a></li>
+              <li><a href="#pricing">+ Pricing</a></li>
+              <li><a href="#app-hosting">+ Application Hosting</a></li>
+              <li><a href="#tax-sw">+ Tax Software Hosting</a></li>
+              <li><a href="#sla">+ Service Level Agreement</a></li>
+              <li><a href="#contact">+ Contact Us</a></li>
+              <li><a href="#cancel">+ Cancellation Policy</a></li>
+            </ul>
+          </div>
 
-    <div class="footer-col">
-      <h5 class="footer-head">Our Services</h5>
-      <ul class="footer-list">
-        <li><a href="#qb-hosting">+ QuickBooks Hosting</a></li>
-        <li><a href="#peachtree">+ PeachTree Hosting</a></li>
-        <li><a href="#quicken">+ Quicken Hosting</a></li>
-        <li><a href="#myob">+ MYOB Hosting</a></li>
-        <li><a href="#benefits">+ Benefits of QuickBooks Hosting</a></li>
-        <li><a href="#drake">+ Drake Hosting</a></li>
-        <li><a href="#proseries">+ ProSeries Hosting</a></li>
-        <li><a href="#lacerte">+ Lacerte Hosting</a></li>
-      </ul>
-    </div>
+          <div class="footer-col">
+            <h5 class="footer-head">Our Services</h5>
+            <ul class="footer-list">
+              <li><a href="#qb-hosting">+ QuickBooks Hosting</a></li>
+              <li><a href="#peachtree">+ PeachTree Hosting</a></li>
+              <li><a href="#quicken">+ Quicken Hosting</a></li>
+              <li><a href="#myob">+ MYOB Hosting</a></li>
+              <li><a href="#benefits">+ Benefits of QuickBooks Hosting</a></li>
+              <li><a href="#drake">+ Drake Hosting</a></li>
+              <li><a href="#proseries">+ ProSeries Hosting</a></li>
+              <li><a href="#lacerte">+ Lacerte Hosting</a></li>
+            </ul>
+          </div>
 
-    <div class="footer-col">
-      <h5 class="footer-head">More</h5>
-      <ul class="footer-list">
-        <li><a href="#taxwise">+ Taxwise Hosting</a></li>
-        <li><a href="#atx">+ ATX Hosting</a></li>
-        <li><a href="#act-sage">+ ACT! by Sage Hosting</a></li>
-        <li><a href="#workgroup">+ Workgroup Server Hosting</a></li>
-        <li><a href="#trial">+ Free Trial</a></li>
-        <li><a href="#qb-addons">+ QuickBooks Add-ons</a></li>
-        <li><a href="#proseries-tax">+ ProSeries Tax Software</a></li>
-        <li><a href="#qb-cloud">+ QuickBooks Cloud Hosting</a></li>
-        <li><a href="#web-design">+ Web Design</a></li>
-      </ul>
-    </div>
+          <div class="footer-col">
+            <h5 class="footer-head">More</h5>
+            <ul class="footer-list">
+              <li><a href="#taxwise">+ Taxwise Hosting</a></li>
+              <li><a href="#atx">+ ATX Hosting</a></li>
+              <li><a href="#act-sage">+ ACT! by Sage Hosting</a></li>
+              <li><a href="#workgroup">+ Workgroup Server Hosting</a></li>
+              <li><a href="#trial">+ Free Trial</a></li>
+              <li><a href="#qb-addons">+ QuickBooks Add-ons</a></li>
+              <li><a href="#proseries-tax">+ ProSeries Tax Software</a></li>
+              <li><a href="#qb-cloud">+ QuickBooks Cloud Hosting</a></li>
+              <li><a href="#web-design">+ Web Design</a></li>
+            </ul>
+          </div>
 
-    <div class="footer-col">
-      <h5 class="footer-head brand-accent">Sapience Cloud</h5>
-      <div class="footer-info">
-        <p>USA Office: 122 St. Ives Crossing, Stockbridge, Georgia-30281</p>
-        <p>24 x 7 Sales & Support</p>
-        <p>Call Sales: +1-855-632-5500 (Toll Free)</p>
-        <p>sales@sapiencecloud.com</p>
-        <p>support@sapiencecloud.com</p>
-      </div>
+          <div class="footer-col">
+            <h5 class="footer-head brand-accent">Sapience Cloud</h5>
+            <div class="footer-info">
+              <p>
+                USA Office: 122 St. Ives Crossing, Stockbridge, Georgia-30281
+              </p>
+              <p>24 x 7 Sales & Support</p>
+              <p>Call Sales: +1-855-632-5500 (Toll Free)</p>
+              <p>sales@sapiencecloud.com</p>
+              <p>support@sapiencecloud.com</p>
+            </div>
 
-      <form class="subscribe" action="#" method="post" novalidate>
-        <input class="sub-input" type="email" placeholder="Email Address" aria-label="Email Address" />
-        <button class="btn btn-outline sub-btn" type="submit">Subscribe</button>
-      </form>
-    </div>
-  </div>
-</footer>
-
-
+            <form class="subscribe" action="#" method="post" novalidate>
+              <input
+                class="sub-input"
+                type="email"
+                placeholder="Email Address"
+                aria-label="Email Address"
+              />
+              <button class="btn btn-outline sub-btn" type="submit">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </footer>
     </main>
 
     <script>
-      // Header scroll state
-      const header = document.querySelector(".site-header");
-      const navWrap = document.querySelector(".nav-wrap");
-      const onScroll = () => {
-        if (window.scrollY > 50) {
-          header.classList.add("is-scrolled");
-        } else {
-          header.classList.remove("is-scrolled");
+      (() => {
+        // ---------- Utilities ----------
+        const $ = (sel) => document.querySelector(sel);
+        const $$ = (sel) => Array.from(document.querySelectorAll(sel));
+
+        // ---------- Header scroll state ----------
+        const header = $(".site-header");
+        if (header) {
+          const onScroll = () => {
+            if (window.scrollY > 50) header.classList.add("is-scrolled");
+            else header.classList.remove("is-scrolled");
+          };
+          window.addEventListener("scroll", onScroll, { passive: true });
+          // run once to set initial state
+          onScroll();
         }
-      };
-      window.addEventListener("scroll", onScroll, { passive: true });
 
-      // Mobile menu
-      const btn = document.getElementById("menuBtn");
-      const panel = document.getElementById("mobilePanel");
-      btn.addEventListener("click", () => {
-        const open = panel.classList.toggle("open");
-        btn.setAttribute("aria-expanded", String(open));
-      });
+        // ---------- Mobile menu toggle ----------
+        const menuBtn = $("#menuBtn");
+        const mobilePanel = $("#mobilePanel");
+        if (menuBtn && mobilePanel) {
+          menuBtn.addEventListener("click", () => {
+            const open = mobilePanel.classList.toggle("open");
+            menuBtn.setAttribute("aria-expanded", String(open));
+          });
+        }
 
-      // If this observer already exists in the page, no need to duplicate.
-      const io = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("in-view");
-              io.unobserve(entry.target);
+        // ---------- IntersectionObserver for animate-in / stagger ----------
+        // Single observer, installed once.
+        (function initIO() {
+          if (window.__io_ready) return;
+          const observer = new IntersectionObserver(
+            (entries, io) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("in-view");
+                  io.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.15 }
+          );
+
+          $$("[data-observe], .animate-in, .stagger").forEach((el) =>
+            observer.observe(el)
+          );
+          // also observe anything already intended (backwards compatible)
+          $$(".animate-in, .stagger").forEach((el) => observer.observe(el));
+
+          window.__io_ready = true;
+        })();
+
+        // ---------- Typewriter ----------
+        function createTypewriter(opts) {
+          const {
+            target,
+            cursor,
+            texts,
+            speed = 70,
+            deleteSpeed = 40,
+            waitTime = 1500,
+            loop = true,
+            showCursor = true,
+            hideCursorOnType = true,
+            startMode = "delete-first",
+          } = opts;
+
+          if (!target) return { start() {} };
+
+          let display = target.textContent || "";
+          let idx = display.length;
+          let wordIdx = 0;
+          let deleting = startMode === "delete-first";
+
+          function setCursorHidden(hidden) {
+            if (!cursor) return;
+            if (hideCursorOnType) cursor.classList.toggle("hidden", hidden);
+          }
+
+          function tick() {
+            const current = texts[wordIdx] || "";
+            if (deleting) {
+              if (display.length) {
+                display = display.slice(0, -1);
+                target.textContent = display;
+                setCursorHidden(true);
+                setTimeout(tick, deleteSpeed);
+              } else {
+                deleting = false;
+                setCursorHidden(false);
+                idx = 0;
+                wordIdx = (wordIdx + 1) % texts.length;
+                if (!loop && wordIdx === 0) return;
+                setTimeout(tick, 200);
+              }
+            } else {
+              if (idx < current.length) {
+                display += current[idx];
+                idx += 1;
+                target.textContent = display;
+                setCursorHidden(true);
+                setTimeout(tick, speed);
+              } else {
+                setCursorHidden(false);
+                setTimeout(() => {
+                  deleting = true;
+                  tick();
+                }, waitTime);
+              }
+            }
+          }
+
+          function start() {
+            if (cursor)
+              cursor.style.display = showCursor ? "inline-block" : "none";
+            const preload = target.textContent || "";
+            const foundIdx = texts.findIndex((w) => w === preload);
+            if (foundIdx >= 0) wordIdx = foundIdx;
+            idx = deleting ? preload.length : 0;
+            tick();
+          }
+
+          return { start };
+        }
+
+        // Start typewriter after DOM ready
+        document.addEventListener("DOMContentLoaded", () => {
+          const title = $("#hero-title");
+          const twTarget = $("#tw-target");
+          const twCursor = $("#tw-cursor");
+
+          if (twTarget) {
+            const words = [
+              "100% User Friendly QuickBooks Hosting",
+              "Cloud-Based Smart Client Technology",
+              "24X7 Hosting Support",
+            ];
+
+            const typer = createTypewriter({
+              target: twTarget,
+              cursor: twCursor,
+              texts: words,
+              speed: 70,
+              deleteSpeed: 40,
+              waitTime: 1500,
+              loop: true,
+              showCursor: true,
+              hideCursorOnType: true,
+              startMode: "delete-first",
+            });
+
+            let started = false;
+            const start = () => {
+              if (!started) {
+                started = true;
+                typer.start();
+              }
+            };
+
+            // Start after the H1 entrance completes (if animate-in transitions run)
+            if (title) {
+              title.addEventListener("transitionend", (e) => {
+                if (e.propertyName === "opacity") start();
+              });
+            }
+
+            // Fallback start in case transition event doesn't fire
+            setTimeout(() => {
+              const isInView = title && title.classList.contains("in-view");
+              const opacity1 =
+                title && parseFloat(getComputedStyle(title).opacity) >= 1;
+              if (!started && (isInView || opacity1)) start();
+            }, 400);
+          }
+        });
+
+        // ------------ Pupup -------------
+        document.addEventListener("DOMContentLoaded", () => {
+          const callSupportBtn = document.getElementById("introPill");
+          const popup = document.getElementById("popupForm");
+          const closeBtn = document.getElementById("closePopup");
+
+          callSupportBtn.addEventListener("click", () => {
+            popup.style.display = "flex";
+          });
+
+          closeBtn.addEventListener("click", () => {
+            popup.style.display = "none";
+          });
+
+          // Close when clicking outside popup
+          window.addEventListener("click", (e) => {
+            if (e.target === popup) {
+              popup.style.display = "none";
             }
           });
-        },
-        { threshold: 0.15 }
-      );
+        });
 
-      // Observe any new animate-in items, including the H1
-      document
-        .querySelectorAll(".animate-in, .stagger")
-        .forEach((el) => io.observe(el));
-      // Ensure animate-in observer exists (from earlier steps)
-      (function ensureIO() {
-        if (window.__io_ready) return;
-        const io = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((e) => {
-              if (e.isIntersecting) {
-                e.target.classList.add("in-view");
-                io.unobserve(e.target);
-              }
+        // ---------- QuickBooks / Tax content toggle ----------
+        const quickbooksBtn = $("#quickbooksBtn");
+        const taxBtn = $("#taxBtn");
+        const quickbooksContent = $("#quickbooksContent");
+        const taxContent = $("#taxContent");
+
+        if (quickbooksBtn && taxBtn && quickbooksContent && taxContent) {
+          // ensure initial state (QuickBooks visible, tax hidden)
+          quickbooksContent.style.display = "block";
+          taxContent.style.display = "none";
+
+          quickbooksBtn.addEventListener("click", () => {
+            quickbooksContent.style.display = "block";
+            taxContent.style.display = "none";
+            // accessibility: focus the content heading so keyboard users notice the change
+            const h = quickbooksContent.querySelector("h2, h1, h3");
+            if (h) h.focus && h.focus();
+          });
+
+          taxBtn.addEventListener("click", () => {
+            quickbooksContent.style.display = "none";
+            taxContent.style.display = "block";
+            const h = taxContent.querySelector("h2, h1, h3");
+            if (h) h.focus && h.focus();
+          });
+        }
+
+        // ---------- Testimonial card shuffle (cycle positions) ----------
+        (function setupShuffle() {
+          const stage = document.querySelector(".cards-stage");
+          if (!stage) return;
+
+          const getTriplet = () => Array.from(stage.querySelectorAll(".tcard"));
+
+          function cyclePositions() {
+            const cards = getTriplet();
+            if (!cards.length) return;
+
+            // Determine current order by classes front/middle/back
+            const mapping = { front: null, middle: null, back: null };
+            cards.forEach((c) => {
+              if (c.classList.contains("front")) mapping.front = c;
+              else if (c.classList.contains("middle")) mapping.middle = c;
+              else if (c.classList.contains("back")) mapping.back = c;
             });
-          },
-          { threshold: 0.15 }
-        );
-        document
-          .querySelectorAll(".animate-in, .stagger")
-          .forEach((el) => io.observe(el));
-        window.__io_ready = true;
-      })();
 
-      function createTypewriter(opts) {
-        const {
-          target,
-          cursor,
-          texts,
-          speed = 70,
-          deleteSpeed = 40,
-          waitTime = 1500,
-          loop = true,
-          showCursor = true,
-          hideCursorOnType = true,
-          startMode = "delete-first", // 'delete-first' means start by erasing preloaded full word
-        } = opts;
-
-        let display = target.textContent || ""; // start with preloaded text
-        let idx = display.length; // char index begins at end (full word shown)
-        let wordIdx = 0; // current word in list (matching the preloaded word)
-        let deleting = startMode === "delete-first"; // begin by deleting
-
-        function setCursorHidden(hidden) {
-          if (!cursor) return;
-          if (hideCursorOnType) {
-            cursor.classList.toggle("hidden", hidden);
-          }
-        }
-
-        function tick() {
-          const current = texts[wordIdx];
-
-          if (deleting) {
-            if (display.length) {
-              display = display.slice(0, -1);
-              target.textContent = display;
-              setCursorHidden(true);
-              setTimeout(tick, deleteSpeed);
-            } else {
-              deleting = false;
-              setCursorHidden(false);
-              idx = 0;
-              // move to next word after erase
-              wordIdx = (wordIdx + 1) % texts.length;
-              if (!loop && wordIdx === 0) {
-                return;
-              }
-              setTimeout(tick, 200);
+            // If any missing (unexpected), just rotate the DOM nodes instead
+            const rolesPresent =
+              mapping.front && mapping.middle && mapping.back;
+            if (!rolesPresent) {
+              // simple DOM rotation as fallback
+              const first = cards.shift();
+              stage.appendChild(first);
+              return;
             }
-          } else {
-            if (idx < texts[wordIdx].length) {
-              display += texts[wordIdx][idx];
-              idx += 1;
-              target.textContent = display;
-              setCursorHidden(true);
-              setTimeout(tick, speed);
-            } else {
-              setCursorHidden(false);
-              // when fully typed, wait then delete (continue loop)
-              setTimeout(() => {
-                deleting = true;
-                tick();
-              }, waitTime);
-            }
-          }
-        }
 
-        function start() {
-          if (cursor) {
-            cursor.style.display = showCursor ? "inline-block" : "none";
-          }
-          // If the preloaded word isn't the first in texts, align indexes
-          const preload = target.textContent || "";
-          const foundIdx = texts.findIndex((w) => w === preload);
-          if (foundIdx >= 0) {
-            wordIdx = foundIdx;
-          }
-          // Ensure idx reflects current position when switching to typing mode later
-          idx = deleting ? preload.length : 0;
-          tick();
-        }
+            // rotate roles: front -> back, middle -> front, back -> middle
+            // capture reference to elements
+            const newFront = mapping.middle;
+            const newMiddle = mapping.back;
+            const newBack = mapping.front;
 
-        return { start };
-      }
-
-      window.addEventListener("DOMContentLoaded", () => {
-        const title = document.getElementById("hero-title");
-        const twTarget = document.getElementById("tw-target");
-        const twCursor = document.getElementById("tw-cursor");
-
-        // Words list (first one is preloaded in HTML)
-        const words = [
-          "100% User Friendly QuickBooks Hosting",
-          "Cloud-Based Smart Client Technology",
-          "24X7 Hosting Support",
-        ];
-
-        const typer = createTypewriter({
-          target: twTarget,
-          cursor: twCursor,
-          texts: words,
-          speed: 70,
-          deleteSpeed: 40,
-          waitTime: 1500,
-          loop: true,
-          showCursor: true,
-          hideCursorOnType: true,
-          startMode: "delete-first", // erase the preloaded full word, then continue
-        });
-
-        let started = false;
-        const start = () => {
-          if (!started) {
-            started = true;
-            typer.start();
-          }
-        };
-
-        // Start after the H1 entrance completes (if using animate-in)
-        title.addEventListener("transitionend", (e) => {
-          if (e.propertyName === "opacity") {
-            start();
-          }
-        });
-
-        // Fallback: start shortly after load in case no transition event fires
-        setTimeout(() => {
-          const isInView = title.classList.contains("in-view");
-          const opacity1 = parseFloat(getComputedStyle(title).opacity) >= 1;
-          if (!started && (isInView || opacity1)) start();
-        }, 400);
-      });
-
-      const quickbooksBtn = document.getElementById("quickbooksBtn");
-      const taxBtn = document.getElementById("taxBtn");
-      const quickbooksContent = document.getElementById("quickbooksContent");
-      const taxContent = document.getElementById("taxContent");
-
-      quickbooksBtn.onclick = () => {
-        quickbooksContent.style.display = "block";
-        taxContent.style.display = "none";
-      };
-
-      taxBtn.onclick = () => {
-        quickbooksContent.style.display = "none";
-        taxContent.style.display = "block";
-      };
-      (function ensureIO() {
-        if (window.__io_ready) return;
-        const io = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((e) => {
-              if (e.isIntersecting) {
-                e.target.classList.add("in-view");
-                io.unobserve(e.target);
-              }
+            // remove all position classes and reassign
+            [mapping.front, mapping.middle, mapping.back].forEach((el) => {
+              el.classList.remove("front", "middle", "back");
             });
-          },
-          { threshold: 0.15 }
-        );
-        document
-          .querySelectorAll(".animate-in, .stagger")
-          .forEach((el) => io.observe(el));
-        window.__io_ready = true;
+
+            newFront.classList.add("front");
+            newMiddle.classList.add("middle");
+            newBack.classList.add("back");
+          }
+
+          // Attach to every shuffle button
+          $$(["[data-shuffle]"].join(",")).forEach((btn) => {
+            btn.addEventListener("click", cyclePositions);
+          });
+        })();
       })();
-      //   -------------------------------------
-      const stage = document.querySelector(".cards-stage");
-      const getTriplet = () => Array.from(stage.querySelectorAll(".tcard"));
-
-      function cyclePositions() {
-        const cards = getTriplet();
-        // collect current roles
-        const roles = cards.map((c) =>
-          c.classList.contains("front")
-            ? "front"
-            : c.classList.contains("middle")
-            ? "middle"
-            : "back"
-        );
-        // rotate roles: [front, middle, back] -> [back, front, middle]
-        const next = [roles[2], roles[0], roles[1]];
-
-        // remove and add classes to match rotated roles
-        cards.forEach((card, i) => {
-          card.classList.remove("front", "middle", "back");
-          card.classList.add(next[i]);
-        });
-      }
-
-      // attach listeners to all shuffle buttons
-      document.querySelectorAll("[data-shuffle]").forEach((btn) => {
-        btn.addEventListener("click", cyclePositions);
-      });
     </script>
   </body>
 </html>
